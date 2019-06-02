@@ -23,7 +23,8 @@ public class Application {
         }
         return firstTeam == firstScoreTeamBet && secondTeam == secondScoreTeamBet
                 ? 2 : ((firstTeam - secondTeam == 0 && firstScoreTeamBet - secondScoreTeamBet == 0)
-                || ((firstTeam > secondTeam && firstScoreTeamBet > secondScoreTeamBet) || (secondTeam > firstTeam && secondScoreTeamBet > firstScoreTeamBet)) ? 1 : 0);
+                || ((firstTeam > secondTeam && firstScoreTeamBet > secondScoreTeamBet) 
+                    || (secondTeam > firstTeam && secondScoreTeamBet > firstScoreTeamBet)) ? 1 : 0);
     }
 
     public static void drawDiamond(int size) {
